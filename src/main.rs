@@ -1,5 +1,6 @@
 mod db;
 mod gui;
+mod models;
 
 use tokio_postgres::Error;
 
@@ -13,7 +14,7 @@ async fn main() -> Result<(), Error> {
         }
     });
 
-    gui::create_and_run_app().expect("TODO: panic message");
+    gui::create_and_run_app().expect("Failed to run the GUI");
 
     Ok(())
 }
