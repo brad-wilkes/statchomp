@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-postgres = "0.7"
+gtk = "0.18.2"
+glib = "0.20.7"
+gio = "0.20.7"
