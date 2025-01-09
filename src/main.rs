@@ -14,7 +14,7 @@ async fn main() -> Result<(), Error> {
         }
     });
 
-    gui::create_and_run_app().expect("Failed to run the GUI");
+    gui::create_and_run_app().await.expect("Failed to run the GUI");
 
     Ok(())
 }
