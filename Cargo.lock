@@ -294,7 +294,7 @@ dependencies = [
  "cairo-rs",
  "gdk-pixbuf",
  "gdk-sys",
- "gio 0.18.4",
+ "gio",
  "glib 0.18.5",
  "libc",
  "pango",
@@ -307,7 +307,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "50e1f5f1b0bfb830d6ccc8066d18db35c487b1b2b1e8589b5dfe9f07e8defaec"
 dependencies = [
  "gdk-pixbuf-sys",
- "gio 0.18.4",
+ "gio",
  "glib 0.18.5",
  "libc",
  "once_cell",
@@ -387,23 +387,6 @@ dependencies = [
  "pin-project-lite",
  "smallvec",
  "thiserror",
-]
-
-[[package]]
-name = "gio"
-version = "0.20.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a517657589a174be9f60c667f1fec8b7ac82ed5db4ebf56cf073a3b5955d8e2e"
-dependencies = [
- "futures-channel",
- "futures-core",
- "futures-io",
- "futures-util",
- "gio-sys 0.20.8",
- "glib 0.20.7",
- "libc",
- "pin-project-lite",
- "smallvec",
 ]
 
 [[package]]
@@ -557,7 +540,7 @@ dependencies = [
  "futures-channel",
  "gdk",
  "gdk-pixbuf",
- "gio 0.18.4",
+ "gio",
  "glib 0.18.5",
  "gtk-sys",
  "gtk3-macros",
@@ -732,7 +715,7 @@ version = "0.18.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ca27ec1eb0457ab26f3036ea52229edbdb74dee1edd29063f5b9b010e7ebee4"
 dependencies = [
- "gio 0.18.4",
+ "gio",
  "glib 0.18.5",
  "libc",
  "once_cell",
@@ -1074,7 +1057,6 @@ dependencies = [
 name = "statchomp"
 version = "0.1.0"
 dependencies = [
- "gio 0.20.7",
  "glib 0.20.7",
  "gtk",
  "tokio",
