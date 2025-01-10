@@ -6,5 +6,5 @@ edition = "2021"
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 tokio-postgres = "0.7"
-gtk = "0.18.1"
-glib = "0.19.9"
+gtk = "0.18.2"
+glib = "0.20.7"
